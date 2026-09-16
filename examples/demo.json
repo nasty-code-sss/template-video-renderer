@@ -1,0 +1,17 @@
+{
+  "name": "demo",
+  "scenes": [
+    {
+      "title": "Ролики из данных",
+      "subtitle": "один шаблон, сто роликов"
+    },
+    {
+      "title": "Оформление в конфиге",
+      "subtitle": "шрифты, цвета и тайминги не зашиты в код"
+    },
+    {
+      "title": "Сборка одной командой",
+      "subtitle": "render --project demo.json --output demo.mp4"
+    }
+  ]
+}

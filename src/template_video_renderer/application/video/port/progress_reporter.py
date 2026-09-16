@@ -1,0 +1,9 @@
+from typing import Protocol
+
+
+class ProgressReporter(Protocol):
+    def frames_planned(self, total_frames: int, duration_seconds: float) -> None: ...
+
+    def frame_rendered(self, frame_index: int, total_frames: int) -> None: ...
+
+    def encoding_started(self, destination: str) -> None: ...

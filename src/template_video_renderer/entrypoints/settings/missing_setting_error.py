@@ -1,0 +1,2 @@
+class MissingSettingError(Exception):
+    pass
