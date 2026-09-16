@@ -1,5 +1,6 @@
 from pathlib import Path
 
+from template_video_renderer.adapters.inbound.cli.batch_render_command import BatchRenderCommand
 from template_video_renderer.adapters.inbound.cli.render_command import RenderCommand
 from template_video_renderer.adapters.outbound.encoding.ffmpeg_video_encoder import (
     FfmpegVideoEncoder,
@@ -29,6 +30,9 @@ class Container:
 
     def render_command(self) -> RenderCommand:
         return RenderCommand(use_case=self._render_video_use_case())
+
+    def batch_render_command(self) -> BatchRenderCommand:
+        return BatchRenderCommand(render_command=self.render_command())
 
     def _render_video_use_case(self) -> RenderVideoUseCase:
         return RenderVideoUseCase(
