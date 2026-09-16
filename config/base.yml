@@ -1,0 +1,47 @@
+canvas:
+  width: 1920
+  height: 1080
+  frames_per_second: 30
+  background_color: "#10121C"
+
+timing:
+  scene_seconds: 4.0
+  transition_seconds: 0.8
+  title_delay_seconds: 0.3
+  subtitle_delay_seconds: 0.9
+
+typography:
+  title:
+    font_path: "C:/Windows/Fonts/arialbd.ttf"
+    size: 96
+    color: "#F0F0F5"
+  subtitle:
+    font_path: "C:/Windows/Fonts/arial.ttf"
+    size: 44
+    color: "#E8552D"
+
+layout:
+  safe_margin_ratio: 0.08
+  title_baseline_ratio: 0.62
+  subtitle_baseline_ratio: 0.74
+  image_height_ratio: 0.42
+  accent_bar_width_ratio: 0.36
+  accent_bar_height: 12
+
+transition:
+  kind: fade
+
+encoding:
+  video_codec: libx264
+  preset: medium
+  constant_rate_factor: 20
+  pixel_format: yuv420p
+  audio_codec: aac
+  audio_bitrate: 192k
+
+rendering:
+  worker_count: 4
+  keep_frames: false
+
+logging:
+  level: INFO

@@ -1,0 +1,6 @@
+logging:
+  level: WARNING
+
+encoding:
+  preset: slow
+  constant_rate_factor: 18
