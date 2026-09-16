@@ -9,6 +9,7 @@ timing:
   transition_seconds: 0.8
   title_delay_seconds: 0.3
   subtitle_delay_seconds: 0.9
+  text_fade_seconds: 0.6
 
 typography:
   title:
@@ -19,6 +20,7 @@ typography:
     font_path: "C:/Windows/Fonts/arial.ttf"
     size: 44
     color: "#E8552D"
+  accent_color: "#E8552D"
 
 layout:
   safe_margin_ratio: 0.08

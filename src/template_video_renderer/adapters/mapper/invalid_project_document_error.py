@@ -1,0 +1,2 @@
+class InvalidProjectDocumentError(Exception):
+    pass

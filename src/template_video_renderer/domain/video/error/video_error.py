@@ -1,0 +1,2 @@
+class VideoError(Exception):
+    pass
